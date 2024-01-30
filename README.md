@@ -43,4 +43,7 @@ Run
 python3 run.py
 ```
 
-Then import all .ahk to Launchbox
+## Import to Launchbox
+
+Emulator setup
+![image](https://github.com/dsync89/mfme-fruit-machine-ahk-gen-toolkit/assets/12208390/6db94d26-070c-4c7c-ae33-95f5bc8c8daf)
