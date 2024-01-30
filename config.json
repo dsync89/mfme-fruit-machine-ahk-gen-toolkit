@@ -1,0 +1,15 @@
+{
+    "sets": [       
+        {
+            "platform": "mfme",
+            "enable": true,
+            "config": {
+                "rom_dir": "s:\\roms-fullset\\slot-machines\\Fruits", 
+                "template_dir": "templates\\mfme",
+                "keymap_dir": "keymapping\\mfme",
+                "gametitle_dir": "gametitles\\mfme",
+                "gamedb_overwrite_file": "gamedb\\mfme\\gamedb_mfme_overwrite.txt"
+            }
+        }       
+    ]
+}
