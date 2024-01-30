@@ -24,6 +24,17 @@ def remove_ahk_not_needed(file_path):
         else:
             pass
 
+def folder_contains_gam_files(folder_path):
+    # List all files in the folder
+    files = os.listdir(folder_path)
+    
+    # Check if any file has the .gam extension
+    for file in files:
+        if file.endswith('.gam'):
+            return True
+    
+    return False
+
 # -----------------------------------------------------------
 # Main
 # -----------------------------------------------------------
@@ -63,6 +74,10 @@ if __name__ == "__main__":
 
     # copy AHK template and rename it as the same as folder name
     for _ in folder_list:
+        # only create AHK file if that folder has .gam file
+        if not folder_contains_gam_files(os.path.join(ROM_DIR, _)):
+            continue
+
         ahk_filename = "{}.ahk".format(os.path.join(output_file_path, _))
 
         print(ahk_filename)
