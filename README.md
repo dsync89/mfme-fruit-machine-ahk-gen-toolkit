@@ -1,5 +1,7 @@
 # MFME Fruit Machine AHK Gen Toolkit
 
+Requires AHKv2.
+
 ## Quick Start
 
 Modify `config.json`
@@ -40,3 +42,5 @@ Run
 ```
 python3 run.py
 ```
+
+Then import all .ahk to Launchbox
